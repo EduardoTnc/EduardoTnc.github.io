@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!-- Declaración de tipo de documento (Document type declaration) -->
+<html lang="es-PE">
+<!-- es-PE se utiliza para dialectos o regionalismos -->
+<head> 
+    <!-- <head> provee información general (metadatos) acerca del documento,
+        incluyendo su título y enlaces a scripts y hojas de estilos. -->
+    
+    <meta charset="UTF-8">
+    <!-- el atributo charset indica el juego de carácteres en el cual está codificado
+        la página, UTF-8 es el universal -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--  el atributo http-equiv y content="IE=edge" le dice que IE trate que este documento iguale la configuración de edge, 
+        no son un standard y se pueden borrar -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--le dice al navegador que el ancho de la pantalla debe considerarse el "Ancho completo" de la página -->
+ 
+    <title>Aprendiendo HTML</title><!-- tittle - entre 55 y 65 carácteres -->
+    
+    <meta name="description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha"> 
+    <!-- description - no más de 165 carácteres -->
+
+    <link rel="canonical" href="http://tudominio.com/la-url-canonica"><!--  el valor "canonical" indica que la URL especificada
+         en el atributo href es la versión canónica o preferencial del documento HTML actual. 
+        La URL canónica es una forma de especificar la versión preferida de una página web cuando existen varias URL con contenido similar. 
+        Esto es útil para prevenir problemas de contenido duplicado y ayuda a los motores de búsqueda a entender cuál es la versión original de la página.  -->
+    
+
+    <link rel="icon" href="img/favicon-html-2.png"><!-- Favicon o icono de la pestaña de la página en el navegador-->
+    <link rel="apple-touch-icon" href="img/favicon-html-2.png"><!-- Favicon para accesos directos en moviles-->
+    
+
+    <meta name="theme-color" content="#FF6600"><!-- La propiedad "theme-color" se utiliza para especificar el color que se muestra 
+        en la barra de estado en dispositivos móviles cuando se agrega una página web a la pantalla de inicio. 
+        En este caso, el color establecido es un naranja claro con un valor de hexadecimal "#FF6600". -->
+    
+    <meta property="og:title" content="Aprendiendo HTML">
+    <meta property="og:description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
+    <meta property="og:image" content="https://tudominio.com/img/...">
+    <meta property="og:url" content="https://tudominio.com/index.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:side" content="@EduardoTanca">
+
+    <link rel="stylesheet" href="assets/estilos.css"><!-- "rel" es un atributo que especifica la relación 
+        entre la página actual y el archivo especificado en "href".
+        Por ejemplo, "stylesheet" indica que el archivo en "href" es una hoja de estilos que se aplicará a la página actual.
+   "href" es un atributo que especifica la dirección URL del archivo asociado con la etiqueta "link".   -->  
+
+</head> 
+<body>
+    <details>
+        <summary class="acordeon-codigos" ><b>CÓDIGOS INICIALES</b></summary>
+        <!-- Aquí abajo puedes poner cualquier etiqueta contenedora yo pondré un article-->
+        <article>
+            <h3>Códigos de presentación</h3>
+            <p>En cada tema de esta página habrá una sección como esta que presentará el código utilizado para el tema.</p>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiqueta iniciales html, head.png" alt="html code">
+        </article>
+    </details>
+    <!-- Solo debemos tener un h1 -->
+    <h1 id="inicio">Aprendiendo Diseño Web</h1>
+    <p>Solo debe haber un encabezado de nivel 1 por documento HTML</p>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <h2>Temario del curso</h2>
+    <!-- ol>li*18>a -->
+    <ol>
+        <li><a href="index.html#texto-basico">Etiquetas de texto básico</a></li>
+        <li><a href="index.html#texto-semantico">Etiquetas de texto semántico</a></li>
+        <li><a href="index.html#etiqueta-br-hr">Etiqueta br y hr</a></li>
+        <li><a href="index.html#etiquetas-formateo">Etiquetas de formateo</a></li>
+        <li><a href="index.html#etiquetas-semanticas-estructurales">Etiquetas semánticas y estructurales</a></li>
+        <li><a href="index.html#etiquetas-bloque-linea">Etiquetas de bloque y linea</a></li>
+        <li><a href="index.html#estilos-css">Agregar estilos CSS en HTML</a></li>
+        <li><a href="index.html#scripts">Invocar scripts en HTML</a></li>
+        <li><a href="index.html#agregar-imagenes">Agregar imágenes</a></li>
+        <li><a href="index.html#svg">SVG</a></li>
+        <li><a href="index.html#figuras">Figuras</a></li>
+        <li><a href="index.html#listas-ordenadas">Listas ordenadas</a></li>
+        <li><a href="index.html#listas-desordenadas">Listas desordenas</a></li>
+        <li><a href="index.html#listas-definicion">Listas de definición</a></li>
+        <li><a href="index.html#tablas-simples-complejas">Tablas simples y complejas</a></li>
+        <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#enlaces-internos">Enlaces internos</a></li>
+        <li><a href="index.html#elementos-interactivos">Elementos Interactivos</a></li>
+        <li><a href="index.html#audio-video">Audio y Video</a></li>
+        <li><a href="index.html#iframes">Iframes</a></li>
+        <li><a href="index.html#formularios">Formularios</a></li>
+        <li><a href="index.html#data-attributes">Data Attributes</a></li>
+        <li><a href="index.html#metas-seo">Metaetiquetas para SEO</a></li>
+        <li><a href="index.html#open-graph">The Open Graph Protocol</a></li>
+        <li><a href="index.html#accesibilidad">Accesibilidad Web</a></li>
+    </ol>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Temario del curso.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>    <!-- la etiqueta semántica <hr> indica salto de contenido -->
+    <h2 id="texto-basico">Etiquetas de texto básico</h2>
+        <p><b> Tags de línea: </b></p>
+        <p>Las siguientes palabras están en diferentes formatos: <br>   
+            <b>b=bold=negrita</b> <br>
+            <i>i=italic=itálica</i> <br>
+            <u>u=underlined=subrayado</u><br>
+            e=mc<sup>2</sup><br>
+            H<sub>2</sub>O <br> 
+            <mark>marcatexto</mark><br>
+            <small>letras pequeñas</small> 
+        </p>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas de texto básico.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="texto-semantico">Etiquetas de texto semántico</h2>
+        <p>Las etiquetas semánticas tienen un significado para el navegador, son las siguientes:<br>
+            <strong>Este texto es importante</strong><br>
+            <em>Este texto hace énfasis</em>
+            <blockquote>Yo sólo sé, que no se nada</blockquote>
+            <cite>Sócrates</cite>
+        </p>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas de texto semántico.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="etiqueta-br-hr">Etiqueta br y hr</h2>
+        <!-- El br es un salto de línea y el hr es un salto de contenido con signif. semántico -->
+        <p>br indica un salto de línea<br>hr indica un salto de contenido y este último tiene significado semántico</p>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas br y hr.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="etiquetas-formateo">Etiquetas de formateo</h2>
+        <!-- la etiqueta <pre> respeta el formateo que le das al texto en el editor -->
+        <pre>
+            Tareas por hacer:
+                HTML
+                    -1
+                    -2
+        </pre>
+        <code>Este texto está en formato código</code>
+        <pre>
+            <code>
+                &lt;meta name="description" content="Esta página contiente el inicio del tod"&gt;
+            </code>
+        </pre>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas de formeto.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="etiquetas-semanticas-estructurales">Etiquetas semánticas y estructurales</h2>
+        <div> <b>div</b> - Etiqueta contenedora que no tiene semámtica</div>
+        <br>
+        <header><b>header</b> - Cabecera de un sitio o una sección</header>
+        <br>
+        <main><b>main</b> - Define la sección principal del documentos, solo puede existir uno por documento</main>
+        <br>
+        <footer><b>footer</b> - Pie de página de un sitio web o de una sección</footer>
+        <br>
+        <nav><b>nav</b> - Representa una navegación</nav>
+        <br>
+        <article><b>article</b> - Representa una sección autocontenida (que por sí sola se explica)</article>
+        <br>
+        <aside><b>aside</b> - Representa contenido complementario o secundario</aside>
+        <br>
+        <section><b>section</b> - Representa una sección de contenido genérico</section>
+        <br>
+        <address><b>address</b> - Representa una información de contacto</address>
+        <br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas semánticas y estructurales.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="etiquetas-bloque-linea">Etiquetas de bloque y linea</h2>
+    <div class="background-color-yellow"> La etiqueta de bloque por excelencia es <b>div</b>, estas etiquetas generan saltos de lína con sus etiquetas hermanas</div>
+    <div><span class="background-color-yellowgreen"> La etiqueta de línea por excelencia es <b>span</b>>, estas solo ocupan el espacio necesario</b>
+    <span>Hola, soy otra span, solo ocupo el espacio que requiero</span></div>
+    <br><br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Etiquetas de bloque y linea.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="estilos-css">Agregar estilos CSS en HTML</h2>
+    <ol reversed start="5" type="I">
+        <li>Se pueden agregar <b>en la misma etiqueta</b> con el atributo style.</li>
+        <li><b>En el head</b> con tags de style.</li>
+        <li> <b>Mediante un link de stylesheet en el head</b> <i> &lt;-(es el más adecuado)</i></li>
+    </ol>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Agregar estilos CSS en HTML.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="scripts">Invocar scripts en HTML</h2>
+    <ol reversed type="I">
+        <li>Mediante el tag <b>script</b> en el documento html, de preferencia al final de la etiqueta body</li>
+        <li>Mediante un <b>doc.js</b> aparte en assets con su etiqueta enlace script con el atributo src="ubicación"de preferencia al final de la etiqueta body </li>
+    </ol>
+    <a href="index.html#inicio">🔼</a>  
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Invocar scripts en HTMl.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="agregar-imagenes">Agregar imágenes</h2>
+    <!-- el atributo alt ayuda a los screen reader describiendo la imagen para las personas con discapacidad visual  -->
+    <!-- los atributos de los estilos para img están en la hoja de estilos! -->
+    <p>Media el tag <b>img src="ubicación" alt="descripción"</b></p>
+    <img class="imagenes-ejemplo" src="img/pngwing.com.png" alt="launching a space rocket from a computer">
+    <img class="imagenes-ejemplo" src="img/unicornios-latam-2020.jpg" alt="Unicornio">
+    <img class="imagenes-ejemplo" src="img/senior_programing.gif" alt="senior_programing">
+    <img class="imagenes-ejemplo" src="img/Alphabet-Brain-Man-Silhouette-Prismatic.svg" alt="head code">
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Agregar imágenes.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 class="imagenes-ejemplo" id="svg">SVG</h2>
+    <p>Se pone directamente el código svg <b>O</b> con el tag <b>img src="ubicación" alt="descripción"</b></p>
+    <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <g id="super-blood-wolf-moon">
+            <g transform="matrix(1,0,0,1,1.08976,-1.0909)">
+                <circle cx="98.91" cy="101.091" r="94.147" style="fill:rgb(174,32,38);"/>
+                <clipPath id="_clip1">
+                    <circle cx="98.91" cy="101.091" r="94.147"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(2.12812,0.593656,-0.593656,2.12812,-124.085,-237.677)">
+                        <path d="M152.504,47.906L183.365,57.934L202.438,84.185L202.438,116.635L183.365,142.886L152.504,152.914L121.643,142.886L102.57,116.635L102.57,84.185L121.643,57.934L152.504,47.906Z" style="fill:rgb(239,157,117);"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(0.364411,0.312609,-0.312609,0.364411,157.442,134.055)">
+                <path d="M3.043,-0L-0,9.479L18.691,9.444L15.564,0.041L3.043,-0Z" style="fill:rgb(174,32,38);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(0.595334,0.510706,-0.510706,0.595334,115.095,67.4836)">
+                <path d="M3.043,-0L-0,9.479L18.691,9.444L15.564,0.041L3.043,-0Z" style="fill:rgb(174,32,38);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(0.406462,0.348683,-0.348683,0.406462,65.9015,118.462)">
+                <path d="M3.043,-0L-0,9.479L18.691,9.444L15.564,0.041L3.043,-0Z" style="fill:rgb(174,32,38);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(-0.437685,-0.368541,0.368541,-0.437685,81.6181,38.1889)">
+                <path d="M3.043,-0L-0,9.479L18.691,9.444L15.564,0.041L3.043,-0Z" style="fill:rgb(174,32,38);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(-0.471468,-0.396986,0.396986,-0.471468,144.901,149.481)">
+                <path d="M3.043,-0L-0,9.479L18.691,9.444L15.564,0.041L3.043,-0Z" style="fill:rgb(174,32,38);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(0.731295,0.682062,-0.682062,0.731295,107.563,-83.5003)">
+                <path d="M147.469,76.676L158.615,84.774L154.358,97.878L140.58,97.878L136.322,84.774L147.469,76.676Z" style="fill:rgb(174,32,38);"/>
+            </g>
+            <g transform="matrix(0.434754,1.52244,-1.48671,0.424551,133.554,-203.381)">
+                <path d="M147.469,76.676L158.615,84.774L154.358,97.878L140.58,97.878L136.322,84.774L147.469,76.676Z" style="fill:rgb(174,32,38);"/>
+            </g>
+            <g transform="matrix(-1.43671,-1.2828,1.2828,-1.43671,204.869,424.923)">
+                <path d="M147.469,76.676L158.615,84.774L154.358,97.878L140.58,97.878L136.322,84.774L147.469,76.676Z" style="fill:rgb(174,32,38);"/>
+            </g>
+            <g transform="matrix(-0.865764,-0.720217,0.703314,-0.845446,108.766,283.981)">
+                <path d="M147.469,76.676L158.615,84.774L154.358,97.878L140.58,97.878L136.322,84.774L147.469,76.676Z" style="fill:rgb(174,32,38);"/>
+            </g>
+            <g transform="matrix(-1.45476,-0.153265,0.149668,-1.42062,307.658,312.415)">
+                <path d="M147.469,76.676L158.615,84.774L154.358,97.878L140.58,97.878L136.322,84.774L147.469,76.676Z" style="fill:rgb(174,32,38);"/>
+            </g>
+        </g>
+    </svg>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/SVG.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="figuras">Figuras</h2>
+    <p>A diferencia de un imagen el tag <b>figure</b> permite poner el tag <b>figcaption</b> o etiqueta en la imagen</p>
+    <figure>
+        <img class="imagenes-ejemplo" src="img/senior_programing.gif" alt="senior_programing">
+        <figcaption><small>Programming all life</small> </figcaption>
+    </figure>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/figuras.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="listas-ordenadas">Listas ordenadas</h2>
+    <p><b>ol</b> de Order List:</p>
+    <h3>Las estaciones del año</h3>
+    <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol start="3">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <!-- reversed es un atributo booleano porque no necesita el ="" -->
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol type="I">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Listas ordenas.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="listas-desordenadas">Listas desordenadas</h2>
+    <p><b>ul</b> de Unorder List</p>
+    <h3>Cosas por hacer</h3>
+    <ul>
+        <li>Terminar curso de HTML y CSS</li>
+        <li>Terminar curso de Hacking Ético</li>
+        <li>Terminar curso de Python</li>
+    </ul>
+    <ul type="circle">
+        <li>Terminar curso de HTML y CSS</li>
+        <li>Terminar curso de Hacking Ético</li>
+        <li>Terminar curso de Python</li>
+    </ul>
+    <ul type="square">
+        <li>Terminar curso de HTML y CSS</li>
+        <li>Terminar curso de Hacking Ético</li>
+        <li>Terminar curso de Python</li>
+    </ul>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Listas desordenadas.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="listas-definicion">Listas de definición</h2>
+    <p><b>dl</b> de Definition List</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es un Lenguage de Marcado que define el contenido de la web</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definición que da estilos al código HTML</dd>
+        <dt>JavaScript</dt>
+        <dd>Es el lenguaje de la Web</dd>
+    </dl>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Listas de definición.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="tablas-simples-complejas">Tablas simples y complejas</h2>
+
+    <h3>Tabla simple:</h3>
+    <table>
+        <p><b>tr</b> de Table Row (fila de la tabla)</p>
+        <p><b>td</b> de Table Data</p>
+        <tr>
+            <td>Nombre</td>
+            <td>Constelación</td>
+            <td>Tipo</td>
+        </tr>
+        <tr>
+            <td>Ikki</td>
+            <td>Fénix</td>
+            <td>Bronce</td>
+        </tr>
+        <tr>
+            <td>Shaina</td>
+            <td>Ofiuco</td>
+            <td>Plata</td>
+        </tr>
+        <tr>
+            <td>Saga</td>
+            <td>Géminis</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Tabla simple.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+
+    <!-- br o line break -->
+    <br><br><br>
+    <h3>Tabla compleja:</h3>
+    <p>con <b>thead - tbody - tfoot</b> y <b>th</b>=Table Heading</p>
+    <table>
+        <thead>
+            <tr>
+                <!-- colspan le indica cuantas columnas ocupa -->
+                <th colspan="3">Tabla de los Santos de Athena</th>
+            </tr>
+            <th>Nombre</th>
+            <th>Constelación</th>
+            <th>Tipo</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ikki</td>
+                <td>Fénix</td>
+                <td>Bronce</td>
+            </tr>
+            <tr>
+                <td>Mistry</td>
+                <td>Lagarto</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Saga</td>
+                <td>Géminis</td>
+                <td>Dorado</td>
+            </tr>
+            <tr>
+                <td>Shaira</td>
+                <!-- rowspan indica cuantas filas ocupa -->
+                <td rowspan="2">Ofiuco</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Odiseo</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Tabla compleja.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <p>Los enlaces se crean con el tag <b>a</b> y dentro el atributo <b>href="dirección" target=</b></p>
+    <a href="Contacto.html">Página de Contacto</a> 
+    <br>
+    <a href="https://jonmircha.com/" target="_blank" rel="nofollow">Visita el sitio Web de jonmircha</a>
+    <!-- el atributo href especifíca una dirección URL -->
+    <!-- asi mismo target="_blank" abre el enlace en una nueva pestaña -->
+    <!-- rel="nofollow" les dice a los boots o arañas de los motores de búsqueda que es un enlace externo no relacionado a este misma página -->
+    <br>
+    <a href="https://monkeytype.com" target="_blank" rel="nofollow"> <img class="imagen-pequeña" src="img/super-blood-wolf-moon-svgrepo-com.svg" alt="super blood wolf moon"> </a>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Enlaces.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <h3>Enlace a correo electrónico</h3>
+    <p>Se crean con un atributo <b>href="mailto:abc@correo.com"</b></p>
+    <a href="mailto:eduardotanca@gmail.com">Envíame un correo aquí</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Enlace a correo electrónico.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    
+    <h3>Enlace a teléfono</h3>
+    <p>Se crean con un atributo <b>href="tel:123456789"</b></p>
+    <a href="tel:985422222">Llámame aquí</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Enlace a teléfono.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+
+    <h3>Enlace hacia WhatsApp</h3>
+    <p>Se crean con un atributo <b>href="https://api.whatsapp.com/send?phone=51985425222&text=Hola"</b></p>
+    <a href="https://api.whatsapp.com/send?phone=51985425222&text=Hola">Escribime a mi WhatsApp aquí</a><br><br>
+    <!-- Otra dirección que puedes usar es: https://wa.me/whatsappphonenumber?text=urlencodedtext e inserta tu número de teléfono 
+        en formato internacional en lugar de whatsappphonenumber y tu mensaje ya codificado en lugar de urlencodedtext. Separe cada espacio entre palabras con %20. -->
+
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Enlace hacia WhatsApp.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="enlaces-internos">Enlaces internos</h2>
+    <p>Los enlaces internos se crean con el tag <b>a</b> y dentro el atributo <b>href="dirección"</b> utilizando como dirección un ID previamente creado</p>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Enlaces internos.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="elementos-interactivos">Elementos Interactivos</h2>
+    <p>Estos elementos pueden disparar algún evento con JavaScript, o incorrectamente podemos agregar atributos en la misma etiqueta para estos eventos.</p>
+    <h3>button</h3>
+    <button onclick="alert('soy una alerta onclick')">soy un button con un alert()</button>
+    <!-- Agregar este tipo de atributos en la misma etiqueta y no hacerlo en un doc. javascript es una mala práctica -->
+    <br><br>
+    <h3>Acordeón</h3>
+    <details>
+        <summary>Título del Acordeón</summary>
+        <!-- Aquí abajo puedes poner cualquier etiqueta contenedora yo pondré un article-->
+        <article>
+            <h3>Título h3</h3>
+            <p>soy un páraffo Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img class="imagenes-ejemplo" src="img/senior_programing.gif" alt="senior_programing">
+        </article>
+    </details>
+    <!-- Si quieres que el acordeón aparezaca open por defecto pones el atributo booleano "open" en details -->
+    <details open>
+        <summary>Título del Acordeón</summary>
+        <!-- Aquí abajo puedes poner cualquier etiqueta contenedora yo pondré un article-->
+        <article>
+            <h3>Título h3</h3>
+            <p>soy un páraffo Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <img class="imagenes-ejemplo" src="img/senior_programing.gif" alt="senior_programing">
+        </article>
+    </details>
+    <br><br>
+    <h3>Ventanas de Diálogo</h3>
+    <dialog id="dialog" open>
+        Soy una ventana dialog experimental
+    </dialog><br><br><br><br><br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Elementos interactivos.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br>
+    <hr>
+    <h2 id="audio-video">Audio y Video</h2>
+    <p>Para esto utilizamos la etiqueta <b>audio</b> o <b>video</b> y dentro el atributo <b>src</b> o "source" (fuente),
+         adicionalmente agregamos el atributo booleano <b>controls</b> para visualizar los controles.</p>
+    <p>Otros atributos para audio y video son: autoplay, loop, muted, preload, poster(solo para video)</p>
+    <audio src="media/Beauty.mp3" controls preload loop ></audio>
+    <br><br>
+    <video src="media/pexels-pavel-danilyuk-5495781.mp4" controls autoplay loop></video>
+    <br><br>
+    <video src="media/pexels-mati-mango-6330779.mp4" controls poster="img/python_language.jpg"></video>
+    <br><br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Audio y video.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <hr>
+    <h2 id="iframes">Iframes</h2>
+    <p>Permite incrustar sitios web, pdfs, mapas, con la etiqueta <b>iframe</b> 
+        muchos contenidos en internet te lo dan junto a su atributo <b>src="fuente"</b></p>
+    <br>
+    <iframe src="Contacto.html" frameborder="1"></iframe>
+    <br><br>
+    <iframe src="https://jonmircha.com" frameborder="0"></iframe>
+    <br><br>
+    <iframe src="media/emmet_cheatsheet-a5.pdf" frameborder="0"></iframe>
+    <br><br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Iframes.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <hr>
+    <h2 id="formularios">Formularios</h2>
+    <h3>Elementos de Formulario</h3>
+    <p>El elemento más básico son los <b>input</b> con su atributo <b>type</b>:</p>
+    <ul>
+        <li><b>type="text"</b></li>
+        <input type="text">
+        <br><br>
+        <li><b>type="checkbox"</b></li>
+        <input type="checkbox">
+        <br><br>
+        <li><b>type="radio"</b></li>
+        <input type="radio">
+        <br><br>
+        <li><b>type="date"</b></li>
+        <input type="date">
+        <br><br>
+        <li><b>type="color"</b></li>
+        <input type="color">
+        <br><br>
+        <li><b>type="button" value="Botón"</b></li>
+        <input type="button" value="Botón">
+        <br><br>
+        <li><b>type="submit"</b> (cuando está dentro de un formulario envía sus datos)</li>
+        <input type="submit">
+        <br><br>
+        <li><b>type="reset"</b> (limpia los valores introducidos en el formulario)</li>
+        <input type="reset">
+        <br><br>
+        <li><b>type="file" </b></li>
+        <input type="file" >
+        <br><br>
+        <li><b>type="file" multiple</b></li>
+        <input type="file" multiple>
+        <br><br>
+        <li><b>type="hidden" name="idioma" value="es"</b> 
+    (no se ven, sirven para que cuando el formulario se envie tu como programador puedas enviar algún valor)</li>
+        <input type="hidden" value="es">
+        <br><br>
+        <li><b>type="email"</b></li>
+        <input type="email">
+        <br><br>
+        <li><b>type="number"</b></li>
+        <input type="number">
+        <br><br>
+        <li><b>type="tel"</b></li>
+        <input type="tel">
+        <br><br>
+        <li><b>type="password"</b></li>
+        <input type="password">
+        <br><br>
+        <li><b>type="search"</b></li>
+        <input type="search">
+        <br><br>
+    </ul>
+    <p>Siguen los <b>textarea y select </b>:</p>
+    <ul>
+        <li><b>textarea name="" id="" cols="50" rows="8"</b></li>
+        <textarea name="" id="" cols="30" rows="8"></textarea>
+        <br><br>
+        <li><b>select > option</b></li>
+        <select name="" id="">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+            <option value="">PHP</option>
+            <option value="">Python</option>
+        </select>
+        <br><br>
+        <li><b>selec multiple > option</b></li>
+        <select name="" id="" multiple>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+            <option value="">PHP</option>
+            <option value="">Python</option>
+        </select>
+    </ul>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Elementos de formulario.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br>
+    <br><br>
+    <h3>Atributos de Formulario</h3>
+    <ul>
+        <li><b>readonly</b></li>
+        <input type="text" value="Campo ya rellenado" readonly>
+        <br><br>
+        <li><b>disabled</b></li>
+        <input type="text" disabled>
+        <br><br>
+        <li><b>placeholder="Escribe tu nombre"</b></li>
+        <input type="text" placeholder="Escribe tu nombre">
+    </ul>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Atributos de formulario.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <h3>Atributos dentro de un Formulario (<b>&lt;form&gt; &lt;form/&gt;</b>)</h3>
+    <!-- el atributo action indica hacia donde se va anviar nuestro formulario-->
+    <h4>Formulario de Login</h4>
+    <form action="Contacto.html" method="post" autocomplete="off">
+        <!-- for se enlace con el id -->
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" pattern="^[A-Za-z]+$" title="El campo solo acepta letras" required>
+        <br>
+        <!-- ! <input type="email" name="email" autcomplete="on" -->
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required >
+        <br>
+        <input type="submit">
+        <!--Con method get file:///D:/Drive/Codes/My%20best%20page/HTML_CSS%20con%20Jonmircha/Contacto.html?usuario=eduardo&password=123 -->
+        <!--Con method post  file:///D:/Drive/Codes/My%20best%20page/HTML_CSS%20con%20Jonmircha/Contacto.html -->
+        <br>
+        <input type="reset">
+    </form>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Atributos dentro de un formulario form.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <h4>Select, Radios y Checkbox</h4>
+    <form>
+        <p>Elige tu idioma <b>(select > option)</b> </p>
+        <select name="idioma" id="" required>
+            <option value="" selected>Elige una opción</option>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="fr">Francés</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugués</option>
+        </select>
+        <br><br>
+        <p>Elige tu lenguaje de programación favorito <b>(input con type=radio)</b></p>
+        <!-- el atributo booleano "required" solo en necesario en poner en un input para ponerselos a todos -->
+        <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+        <label for="radio-js">JavaScript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
+        <label for="radio-py">Python</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-php">PHP</label>
+        
+        <br><br>
+        <p>Elige tus intereses</p>
+        <label>
+            <input type="checkbox" name="intereses" value="deportes">Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="finanzas" checked required>Finanzas
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="salud" checked>Salud
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="politica">Política
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="ecologia">Ecología
+        </label>
+        <p><label>
+                <input type="checkbox" name="terminos" required>¿Aceptas los términos y condiciones?
+            </label></p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Selectm radios and checkbox.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <h4>Formulario de Contacto</h4>
+    <!--  https://formsubmit.co/your@email.com  -->
+    <form action="https://formsubmit.co/roberto4723bn@gmail.com" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios en blanco" required>
+        <br>
+        <input type="email" name="correo" placeholder="Correo electrónico"pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required title="Fomato de correo inválido">
+        <br>
+        <textarea name="comentarios" id="" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Formulario de contacto.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <hr>
+    <h2 id="data-attributes">Data Attributes</h2>
+    <p>Para crear data-attributes tus atributos deben empezar con <b>"data-"</b> , se sacan provecho con JavaScript</p>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumn">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Data Attributes.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <hr>
+    <h2 id="metas-seo">Metaetiquetas para SEO y móviles</h2>
+    <p>Aquí vimos las metaetiquetas <br>
+    <b>&lt;link rel="icon"...&gt; <br> 
+    &lt;link rel="apple-touch-icon"...&gt; <br> 
+    &lt;meta name="theme-color" content="FF6600"&gt;</b>
+    </p>
+    <br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Metaetiquetas para SEO y móviles.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+    <br><br>
+    <hr>
+    <h2 id="open-graph">The Open Graph Protocol - Metaetiquetas para Redes Sociales</h2>
+    <a href="https://ogp.me/">> Documentación &lt;</a>
+    <br><br>
+    <img class="imagenes-codigos" src="img/the-open-graph-protocol-example-code.png" alt="Ejemplo de metaetiquetas haciendo uso de Open Graph Protocol (Website Cards)">
+    <br>
+    <a href="index.html#inicio">🔼</a>
+    <hr>
+    <h2 id="accesibilidad">Accesibilidad Web</h2>
+    <h3 role="title">Las Estaciones del año</h3>
+    <ul role="list">
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="2" role="listitem">Verano</li>
+        <li tabindex="3" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+    </ul>
+    <a href="#" target="_blank" role="link" aria-label="En este enlace encontrarás más información sobre las estaciones del año">Más información...</a>
+    <br><br>
+    <p><b> Links sobre Accesibilidad Web: </b><br>  
+        - https://web.dev/accessible/ <a href="https://web.dev/accessible/" target="_blank">ir</a> <br>
+        - https://html5accessibility.com/ <br>
+        - https://www.w3.org/blog/news/archives... <br>
+        - https://www.youtube.com/channel/UCU6l...</p>
+    <br><br>
+    <a href="index.html#inicio">🔼</a>
+    <br><br>
+    <details>
+        <summary class="acordeon-codigos" ><b>Códigos de la sección</b></summary>
+        <article>
+            <img class="imagenes-codigos" src="Screenshots del código/Accesibilidad Web.png" alt="Códigos presentando la sección">
+        </article>        
+    </details>
+
+    
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        console.log("Hola estamos aprendiendo HTML")
+    </script>
+    <script src="assets/codigos.js"></script>
+
+
+</body>
+</html>
