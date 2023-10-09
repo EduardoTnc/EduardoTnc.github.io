@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color:rgb(233, 4, 4)
+}
+
+h2 {
+    color: rgb(206, 69, 34);
+}
+
+.imagenes-ejemplo {
+    max-width: 20%;
+    height: auto;
+}
+
+.imagenes-codigos {
+    max-width: 1200px;
+    height: auto;
+}
+
+video {
+    max-width: 50%;
+    height: auto;
+    
+}
+
+iframe {
+    width: 80%;
+    height: 400px;
+}
+
+.acordeon-codigos {
+    color: rgb(12, 24, 187);
+}
+
+.background-color-yellow {
+    background-color: yellow;
+}
+
+.background-color-yellowgreen {
+    background-color: yellowgreen;
+}
+
+.imagen-pequeña {
+    width: 100px;
+    height: auto;
+}
